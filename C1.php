@@ -11,6 +11,10 @@ class C1
     public $a1 ;
     public $var1;
 
+    public function __construct()
+    {
+        
+    }
     public function func1()
     {
     }
