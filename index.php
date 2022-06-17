@@ -3,7 +3,6 @@
 require_once "C3.php";
 require_once "C1.php";
 
-use tt2\C1;
 
 echo phpversion();
 
