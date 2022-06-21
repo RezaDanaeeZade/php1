@@ -17,6 +17,7 @@ class C1
     }
     public function func1()
     {
+        echo "<br/> hi from C1 <br/>";
     }
 
     protected function func2()

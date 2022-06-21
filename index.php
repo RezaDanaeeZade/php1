@@ -5,16 +5,15 @@ require_once "C1.php";
 
 
 echo phpversion();
-
-
-$c1 = new C1();
+$class_name="C1";
+$c1=new $class_name;
+//$c1 = new C1();
 $c3 = new C3();
 $c1->func1();
 $c1->a1 = 0;
 $a1 = null;
- $offset = 5;
+ $constant = 5;
 $a = "sss";
-
 $myarr = array(5, 10, 15, array(100, 101), 4);
 echo $myarr[0] . $myarr[3][0];
 
@@ -28,9 +27,9 @@ if ($a) {
 
 function sum(int $num1, $num2)
 {
-    global $offset;
-    $offset = 10000;
-    return ($num1 + $num2 + $offset);
+    global $constant;
+    $constant = 10000;
+    return ($num1 + $num2 + $constant);
 }
 echo sum(5.5,5);
 echo "<br/>";
